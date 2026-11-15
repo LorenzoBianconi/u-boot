@@ -522,6 +522,7 @@
 &ethernet0 {
 	phy-handle = <&hsgmii_phy0>;
 	phy-mode = "2500base-x";
+	max-speed = <2500>;
 
 	pinctrl-0 = <&ethernet0_default>;
 	pinctrl-names = "default";
@@ -979,6 +980,7 @@
 
 &serdes0 {
 	phy-supply = <&vreg_l5a>;
+	vdda-0p9-supply = <&vreg_l4a>;
 
 	status = "okay";
 };
